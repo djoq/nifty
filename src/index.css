@@ -11,3 +11,23 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.btn {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 11px;
+}
+
+.btn-green {background-color: #4CAF50;} /* Green */
+.btn-blue {background-color: #008CBA;} /* Blue */
+.btn-red {background-color: #f44336;} /* Red */
+.btn-grey {background-color: #e7e7e7; color: black;} /* Gray */
+.btn-black {background-color: #555555;} /* Black */
+

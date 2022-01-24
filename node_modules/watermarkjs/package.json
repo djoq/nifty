@@ -1,0 +1,60 @@
+{
+  "name": "watermarkjs",
+  "version": "2.1.1",
+  "description": "Watermarked images in the browser",
+  "main": "dist/watermark.js",
+  "scripts": {
+    "test": "jest",
+    "bundle": "webpack",
+    "sync": "browser-sync start --server examples --index index.html --files 'examples/**/*.css, examples/**/*.html, examples/**/*.js' --port 4000",
+    "copy-dist": "cp dist/* examples/scripts",
+    "watch": "watch \"npm run build\" lib",
+    "build": "npm run bundle && npm run copy-dist && notify -t 'npm run build' -m 'complete'",
+    "dev": "npm run watch & npm run sync"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:brianium/watermarkjs.git"
+  },
+  "keywords": [
+    "canvas",
+    "watermark",
+    "image",
+    "file"
+  ],
+  "author": "Brian Scaturro <scaturrob@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brianium/watermarkjs/issues"
+  },
+  "homepage": "https://github.com/brianium/watermarkjs",
+  "devDependencies": {
+    "@babel/core": "^7.7.2",
+    "@babel/preset-env": "^7.7.1",
+    "babel-jest": "^24.9.0",
+    "babel-loader": "^8.0.6",
+    "babelify": "^10.0.0",
+    "browser-sync": "^2.26.7",
+    "browserify": "^16.5.0",
+    "browserify-derequire": "^1.0.1",
+    "jest-cli": "^24.9.0",
+    "node-notifier-cli": "^1.1.2",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "watch": "^1.0.2",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  },
+  "jest": {
+    "setupFiles": [
+      "<rootDir>/jestEnvironment.js"
+    ],
+    "transform": {
+      "\\.js$": [
+        "babel-jest"
+      ]
+    },
+    "moduleFileExtensions": [
+      "js"
+    ]
+  }
+}

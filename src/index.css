@@ -12,7 +12,6 @@ code {
     monospace;
 }
 
-
 .btn {
   background-color: #4CAF50; /* Green */
   border: none;
@@ -30,4 +29,3 @@ code {
 .btn-red {background-color: #f44336;} /* Red */
 .btn-grey {background-color: #e7e7e7; color: black;} /* Gray */
 .btn-black {background-color: #555555;} /* Black */
-

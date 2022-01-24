@@ -72,7 +72,6 @@ class App extends Component {
                      </div>
                     <button type="button" onClick={this.submit} className={"btn btn-green"}> Download </button>
                     </span>
-
                     : null
                 }
 
@@ -81,6 +80,5 @@ class App extends Component {
     )
     }
 }
-
 
 export default App;

@@ -1,10 +1,10 @@
 # NFT Minting Protection
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is hosted [ Postchain.com ](https://postchain.com).
 
-## Available Scripts
+## Contributing
 
-In the project directory, you can run:
+If there are other platforms you'd like to add, please fork and submit a PR
 
 ### `npm start`
 
